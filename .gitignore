@@ -1,51 +1,19 @@
-# Server Configuration #
-# Logs #
-logs
-*.log
-*.log*
-
-# Node files #
+# Dependencies
 node_modules/
-npm-debug.log
-yarn-error.log
 
-# OS generated files #
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
 .DS_Store
 Thumbs.db
-.tmp/
-src/schema.gql
-
-# Typing #
-typings/
-
-# Dist #
-tsconfig.build.json
-tsconfig.micro.build.json
-
-# IDE #
-.idea/
-*.swp
-.awcache
-
-# Generated source-code #
-src/**/*.js
-src/**/*.js.map
-src/public/apidoc/
-test/**/*.js
-test/**/*.js.map
-coverage/
-!test/preprocessor.js
-
-# Uploads #
-*.zip
-*.xlx
-*.xlsx
-
-# Env files #
-.env
-.env.production
-.env.qa
-.env.development
-
-!package-scripts.js
-.beforeBuild/
